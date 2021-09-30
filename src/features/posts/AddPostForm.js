@@ -28,6 +28,20 @@ export const AddPostForm = () => {
         }
     }
 
+    // const savePostAsync = () => {
+    //     setTitle('')
+    //     setContent('')
+    //     return async dispatch => {
+    //         setTimeout(() => {
+    //             dispatch(postAdded({
+    //                 id: nanoid(),
+    //                 title,
+    //                 content
+    //             }))
+    //         }, 2000);
+    //     }
+    // }
+
     return (
         <section>
             <h2>Add a New Post</h2>
@@ -50,6 +64,9 @@ export const AddPostForm = () => {
                 <button type="button" onClick={onSavePostClicked}>
                     Save Post
                 </button>
+                {/*<button type="button" onClick={() => dispatch(savePostAsync())}>*/}
+                {/*    Save Post Async*/}
+                {/*</button>*/}
             </form>
         </section>
     )
